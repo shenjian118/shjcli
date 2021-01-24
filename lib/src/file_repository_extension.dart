@@ -13,10 +13,8 @@ extension MyFileRepositry on FileRepository {
   Future<void> myChangeIosAppName(String appName) async {
     try {
       List contentLineByLine = await readFileAsLineByline(
-          filePath: p.join(
-        appName,
-        iosInfoPlistPath,
-      ));
+        filePath: p.join(appName, iosInfoPlistPath),
+      );
 
       for (var i = 0; i < contentLineByLine.length; i++) {
         if (contentLineByLine[i].contains('<key>CFBundleName</key>')) {
@@ -25,10 +23,7 @@ extension MyFileRepositry on FileRepository {
         }
       }
       await writeFile(
-        filePath: p.join(
-          appName,
-          iosInfoPlistPath,
-        ),
+        filePath: p.join(appName, iosInfoPlistPath),
         content: contentLineByLine.join('\n'),
       );
       print('IOS appname changed successfully to : $appName');

@@ -81,8 +81,6 @@ class CliApp {
     _out('');
     _out('如何使用 $appName  点击: ，如果有问题请问我');
     _out(argParser.usage);
-    _out('');
-    _out('已有的代码生成器:');
   }
 }
 

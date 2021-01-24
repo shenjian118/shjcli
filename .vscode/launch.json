@@ -8,10 +8,6 @@
             "name": "shjcli",
             "request": "launch",
             "type": "dart",
-            "args": [
-                "-n",
-                "temp",
-            ],
             "program": "bin/shjcli.dart"
         }
     ]
