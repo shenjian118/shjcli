@@ -8,6 +8,7 @@
             "name": "shjcli",
             "request": "launch",
             "type": "dart",
+            // "args": ["-n","shj_module", "sfmodule-bis"],
             "program": "bin/shjcli.dart"
         }
     ]

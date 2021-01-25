@@ -1,7 +1,6 @@
 import 'dart:io';
-
-import 'package:rename/file_repository.dart';
 import 'package:path/path.dart' as p;
+import 'package:rename/file_repository.dart';
 
 extension MyFileRepositry on FileRepository {
   static String pubspecPath = 'pubspec.yaml';

@@ -23,6 +23,7 @@ class ModuleCreate {
       args.add(modeGit);
     }
     args.add(appName);
+    stdout.write(p.current);
     await Process.run('git', args,
             workingDirectory: p.current, runInShell: true)
         .then((result) {
